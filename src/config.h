@@ -52,6 +52,6 @@
  * DEBUG enables more extnsive logging
  * when set to 1(may spam a lot in logs)
  */
-#define DEBUG          1
+#define DEBUG          0
 
 #endif

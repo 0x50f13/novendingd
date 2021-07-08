@@ -2,7 +2,7 @@ target_build(){
   require_command gcc
   require_directory bin
   change_dir src
-  exec "gcc -Wall -Wpedantic -llog *.c -o../bin/novendingd"
+  exec "gcc -O3 -Wall -Wpedantic -llog *.c -o../bin/novendingd"
   leave_dir
   success "Succesfully built novendingd."
 }
