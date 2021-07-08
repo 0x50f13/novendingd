@@ -136,6 +136,13 @@ int main(){
              wasRunning=false;
           }
        }
+#if NO_GSERVICES
+       if(get_proc_count(UID_GSERVICES)>0){
+          __android_log_print(ANDROID_LOG_INFO, MODNAME, "detected start up of google services in main profile: killing immeadiatly");
+          kill_by_user(UID_GSERVICES);
+       }
+#endif 
        sleep(IDLE_TIME);
+
     }
 }

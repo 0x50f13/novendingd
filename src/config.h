@@ -17,6 +17,20 @@
  */
 #define UID_MAIN       10144
 
+/* NO_GSERVICES
+ * NO_GSERVICES indicates wether program
+ * should also prevent Google Play Services from
+ * running in main profile. 
+ */
+#define NO_GSERVICES   1
+
+/* UID_GSERVICES
+ * UID_GSERVICES defines user id of 
+ * Google Play Services in main profile.
+ * Should be set when NO_GSERVICES is 1.
+ */
+#define UID_GSERVICES 10143
+
 /* MODNAME
  * MODNAME is a string which would be 
  * displayed in a log when daemon will
